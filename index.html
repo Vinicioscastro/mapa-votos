@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Votos — Caxias MA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --verde:#1a6b3c;--verde2:#2d9e5f;--verde-fundo:#f0f7f3;
+      --cinza:#4a4a4a;--cinza-claro:#e8e8e8;--rural:#8b5e3c;
+      --azul:#1a4a8b;--azul-fundo:#f0f4ff;
+      --laranja:#c45e1a;--laranja-fundo:#fff4ed;
+    }
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f4;color:var(--cinza);height:100vh;display:flex;flex-direction:column;overflow:hidden}
+
+    /* HEADER */
+    header{background:var(--verde);color:white;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;flex-shrink:0}
+    .header-left h1{font-size:.95rem;font-weight:600}
+    .header-left p{font-size:.72rem;opacity:.75;margin-top:1px}
+    .header-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .badge{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:4px 12px;border-radius:20px;font-size:.8rem;font-weight:600;white-space:nowrap}
+
+    /* TABS */
+    .tabs{background:white;border-bottom:2px solid var(--cinza-claro);display:flex;flex-shrink:0}
+    .tab{padding:10px 20px;font-size:.82rem;font-weight:500;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s;white-space:nowrap}
+    .tab.ativo{color:var(--verde);border-bottom-color:var(--verde);font-weight:600}
+    .tab:hover{color:var(--verde)}
+
+    /* MAIN */
+    .main{display:flex;flex:1;overflow:hidden}
+    .sidebar{width:320px;flex-shrink:0;display:flex;flex-direction:column;border-right:1px solid var(--cinza-claro);background:white;overflow:hidden}
+    .sidebar-scroll{overflow-y:auto;flex:1}
+    #mapa{flex:1}
+    .content-area{flex:1;overflow-y:auto;padding:16px}
+
+    /* RESUMO */
+    .resumo{padding:12px 16px;border-bottom:1px solid var(--cinza-claro);flex-shrink:0}
+    .resumo-nome{font-size:1rem;font-weight:700;color:var(--verde)}
+    .resumo-sub{font-size:.75rem;color:#888;margin-bottom:8px}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+    .stat{background:var(--verde-fundo);border-radius:7px;padding:8px 10px}
+    .stat-valor{font-size:1.2rem;font-weight:700;color:var(--verde);line-height:1}
+    .stat-label{font-size:.66rem;color:#777;margin-top:2px}
+    .stat.full{grid-column:1/-1}
+
+    /* FILTROS */
+    .filtros{padding:8px 16px;border-bottom:1px solid var(--cinza-claro);display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+    .filtros span{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:#999}
+    .filtro-tipo{display:flex;gap:4px}
+    .btn-f{font-size:.68rem;padding:2px 8px;border-radius:20px;border:1px solid var(--cinza-claro);background:white;cursor:pointer;color:#777}
+    .btn-f.ativo{background:var(--verde);color:white;border-color:var(--verde)}
+
+    /* LISTA */
+    .bairro-item{padding:9px 16px;border-bottom:1px solid #f0f0f0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;transition:background .1s}
+    .bairro-item:hover,.bairro-item.ativo{background:var(--verde-fundo)}
+    .bairro-item.ativo{border-left:3px solid var(--verde)}
+    .bairro-nome{font-size:.83rem;font-weight:500;color:#333}
+    .bairro-tag{font-size:.6rem;padding:1px 6px;border-radius:10px;margin-top:2px;display:inline-block}
+    .tag-u{background:#e8f4ee;color:var(--verde)}
+    .tag-r{background:#f4ede8;color:var(--rural)}
+    .bairro-v{font-size:.9rem;font-weight:700;color:var(--verde);text-align:right;min-width:45px}
+    .bairro-v span{display:block;font-size:.6rem;font-weight:400;color:#aaa}
+    .barra-c{height:3px;background:var(--cinza-claro);border-radius:2px;margin-top:4px}
+    .barra{height:3px;background:var(--verde);border-radius:2px}
+
+    /* COMPARAÇÃO — SELETOR */
+    .comp-box{padding:14px 16px;border-bottom:1px solid var(--cinza-claro)}
+    .comp-box label{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:#999;display:block;margin-bottom:5px}
+    .comp-select{width:100%;padding:6px 10px;border:1px solid var(--cinza-claro);border-radius:6px;font-size:.82rem;color:#333;background:white;outline:none}
+    .btn-comparar{width:100%;margin-top:8px;padding:8px;background:var(--verde);color:white;border:none;border-radius:6px;font-size:.82rem;font-weight:600;cursor:pointer}
+    .btn-comparar:hover{background:var(--verde2)}
+
+    /* COMPARAÇÃO — RESULTADO */
+    .comp-resultado{padding:14px 16px}
+    .comp-titulo{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#999;margin-bottom:10px}
+    .comp-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+    .comp-stat{border-radius:8px;padding:10px 12px;text-align:center}
+    .comp-stat.a{background:var(--verde-fundo);border:1px solid #c8e6d5}
+    .comp-stat.b{background:var(--azul-fundo);border:1px solid #c8d5e6}
+    .comp-stat-nome{font-size:.68rem;color:#777;margin-bottom:3px}
+    .comp-stat-valor{font-size:1.2rem;font-weight:700}
+    .comp-stat.a .comp-stat-valor{color:var(--verde)}
+    .comp-stat.b .comp-stat-valor{color:var(--azul)}
+    .comp-stat-sub{font-size:.65rem;color:#aaa;margin-top:2px}
+    .diff-badge{grid-column:1/-1;text-align:center;padding:8px;border-radius:8px;font-size:.82rem;font-weight:600}
+    .diff-pos{background:#e8f4ee;color:var(--verde)}
+    .diff-neg{background:#fde8e8;color:#c0392b}
+    .diff-zero{background:#f5f5f5;color:#888}
+
+    /* TABELA COMPARAÇÃO */
+    .comp-table-wrap{overflow-x:auto;margin-top:12px}
+    table{width:100%;border-collapse:collapse;font-size:.78rem}
+    thead tr{background:var(--verde);color:white}
+    th{padding:7px 10px;text-align:left;font-weight:500;white-space:nowrap}
+    td{padding:6px 10px;border-bottom:1px solid #f0f0f0;white-space:nowrap}
+    tr:hover td{background:#fafafa}
+    .td-pos{color:var(--verde);font-weight:600}
+    .td-neg{color:#c0392b;font-weight:600}
+    .td-zero{color:#888}
+
+    /* GRÁFICO */
+    .grafico-wrap{background:white;border-radius:10px;padding:14px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+    .grafico-titulo{font-size:.78rem;font-weight:600;color:#444;margin-bottom:10px}
+    .grafico-canvas{max-height:320px}
+
+    /* FOOTER */
+    footer{position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--verde);color:rgba(255,255,255,.85);text-align:center;padding:6px 24px;font-size:.72rem;flex-shrink:0}
+    footer strong{color:white}
+
+    /* MODAL */
+    .modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1000;align-items:center;justify-content:center}
+    .modal-ov.aberto{display:flex}
+    .modal{background:white;border-radius:12px;width:92%;max-width:560px;max-height:84vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+    .modal-h{padding:16px 20px 12px;background:var(--verde);color:white}
+    .modal-h h2{font-size:.95rem;font-weight:600}
+    .modal-h p{font-size:.76rem;opacity:.8;margin-top:2px}
+    .modal-total{font-size:1.7rem;font-weight:700;margin-top:6px}
+    .modal-b{overflow-y:auto;padding:14px 20px;flex:1}
+    .escola-card{margin-bottom:12px;border:1px solid var(--cinza-claro);border-radius:8px;overflow:hidden}
+    .escola-h{background:var(--verde-fundo);padding:8px 12px;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+    .escola-nome{font-size:.82rem;font-weight:600;color:#333}
+    .escola-pov{font-size:.7rem;color:var(--rural);margin-top:2px;font-style:italic}
+    .escola-tot{font-size:.9rem;font-weight:700;color:var(--verde);white-space:nowrap}
+    .escola-sec{padding:6px 12px}
+    .sec-linha{display:flex;justify-content:space-between;font-size:.75rem;padding:3px 0;border-bottom:1px solid #f5f5f5;color:#666}
+    .sec-linha:last-child{border-bottom:none}
+    .modal-f{padding:10px 20px;border-top:1px solid var(--cinza-claro);display:flex;justify-content:flex-end}
+    .btn-fechar{background:var(--verde);color:white;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:.82rem}
+    .loader{display:flex;align-items:center;justify-content:center;padding:20px;color:#aaa;font-size:.85rem}
+    .erro{padding:16px;color:#c0392b;font-size:.82rem;text-align:center}
+
+    /* MOBILE */
+    @media(max-width:768px){
+      body{overflow:auto;height:auto}
+      .main{flex-direction:column;overflow:visible}
+      .sidebar{width:100%;border-right:none;overflow:visible}
+      .sidebar-scroll{overflow:visible;max-height:none}
+      #mapa{display:none}
+      .content-area{padding:12px}
+      body{padding-bottom:36px}
+      .tabs .tab{padding:10px 12px;font-size:.78rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Mapa de Votos — MA</h1>
+    <p>Eleições Municipais 2020 · 2024 · Por bairro e local de votação</p>
+  </div>
+  <div class="header-right">
+    <div class="badge" id="candidatoBadge">Carregando...</div>
+  </div>
+</header>
+
+<div class="tabs">
+  <div class="tab ativo" onclick="mudarTab('individual',this)">📊 Individual</div>
+  <div class="tab" onclick="mudarTab('comparacao',this)">⚖️ Comparação</div>
+</div>
+
+<div class="main" id="mainIndividual">
+  <!-- SIDEBAR INDIVIDUAL -->
+  <div class="sidebar">
+    <div class="resumo" id="resumo"><div class="loader">Carregando...</div></div>
+    <div class="filtros">
+      <span>Bairros</span>
+      <div class="filtro-tipo">
+        <button class="btn-f ativo" onclick="filtrar('todos',this)">Todos</button>
+        <button class="btn-f" onclick="filtrar('urbana',this)">Urbano</button>
+        <button class="btn-f" onclick="filtrar('rural',this)">Rural</button>
+      </div>
+    </div>
+    <div class="sidebar-scroll" id="listaBairros"><div class="loader">Carregando...</div></div>
+  </div>
+  <div id="mapa"></div>
+</div>
+
+<!-- ABA COMPARAÇÃO -->
+<div class="main" id="mainComparacao" style="display:none">
+  <div class="sidebar">
+    <div class="comp-box">
+      <label>Candidato A</label>
+      <select class="comp-select" id="selA"></select>
+    </div>
+    <div class="comp-box">
+      <label>Candidato B</label>
+      <select class="comp-select" id="selB"></select>
+    </div>
+    <div style="padding:0 16px 14px">
+      <button class="btn-comparar" onclick="executarComparacao()">Comparar →</button>
+    </div>
+    <div class="sidebar-scroll" id="listaComp"><div class="loader">Selecione dois candidatos acima</div></div>
+  </div>
+  <div class="content-area" id="resultadoComp">
+    <div class="loader">Selecione os candidatos e clique em Comparar</div>
+  </div>
+</div>
+
+<footer>
+  <strong>Mapa de Votos</strong>, por Vinicios Castro &nbsp;·&nbsp; Para mais informações: <strong>(98) 98153-9453</strong>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-ov" id="modalOv" onclick="fecharModal(event)">
+  <div class="modal">
+    <div class="modal-h" id="modalH"></div>
+    <div class="modal-b" id="modalB"></div>
+    <div class="modal-f"><button class="btn-fechar" onclick="fecharModal()">Fechar</button></div>
+  </div>
+</div>
+
+<script>
+// ── COORDS ──────────────────────────────────────────────────────────────────
+const COORDS={
+  "CENTRO":[-4.8695,-43.3567],"COHAB":[-4.8620,-43.3690],"PONTE":[-4.8750,-43.3520],
+  "VOLTA REDONDA":[-4.8580,-43.3480],"CAMPO DE BELEM":[-4.8810,-43.3430],
+  "TREZIDELA":[-4.8660,-43.3620],"TESO DURO":[-4.8720,-43.3550],
+  "MORRO DO ALECRIM":[-4.8640,-43.3700],"CANGALHEIRO":[-4.8780,-43.3600],
+  "SERIEMA":[-4.8590,-43.3540],"SAO FRANCISCO":[-4.8830,-43.3480],
+  "PIRAJÁ":[-4.8670,-43.3450],"CASTELO BRANCO":[-4.8700,-43.3730],
+  "MUTIRAO":[-4.8610,-43.3650],"NOVA CAXIAS":[-4.8550,-43.3600],
+  "TAMARINEIRO":[-4.8740,-43.3480],"REFINARIA":[-4.8820,-43.3550],
+  "JOAO VIANA":[-4.8680,-43.3800],"ALTO DO IPEM":[-4.8630,-43.3420],
+  "VILA ALECRIM":[-4.8660,-43.3750],"VILA ARIAS":[-4.8590,-43.3700],
+  "CALDEIROES":[-4.8710,-43.3380],"BAIXINHA":[-4.8760,-43.3650],
+  "JOSE CASTRO":[-4.8650,-43.3510],"LUIZA QUEIROZ":[-4.8570,-43.3560],
+  "MATADOURO NOVO":[-4.8800,-43.3490],"FUMO VERDE":[-4.8690,-43.3760],
+  "BACURI":[-4.8730,-43.3410],"SALOBRO":[-4.8620,-43.3780],
+  "VENEZA":[-4.8580,-43.3640],"VILA LOBAO":[-4.8760,-43.3700],
+  "VILA SAO JOSE":[-4.8840,-43.3560],"SÃO PEDRO":[-4.8690,-43.3830],
+  "RES. EUGÊNIO COUTINHO":[-4.8610,-43.3460],"RES. HELIO QUEIROZ":[-4.8640,-43.3490],
+  "RES. VILA PARAISO":[-4.8670,-43.3850],
+  "1º DISTRITO - ZONA RURAL":[-4.9100,-43.4200],
+  "2º DISTRITO - ZONA RURAL":[-4.7800,-43.4500],
+  "3º DISTRITO - ZONA RURAL":[-4.9500,-43.2800]
+};
+
+// ── ESTADO ───────────────────────────────────────────────────────────────────
+let dados={}, candidatoAtual='', filtroAtual='todos', marcadores=[], mapa=null, bairroAtivo=null, tabAtual='individual', graficoComp=null;
+const isMobile=()=>window.innerWidth<=768;
+
+// ── UTILS ────────────────────────────────────────────────────────────────────
+const nc=n=>n.replace(' - ZONA RURAL','').replace(' - ZONA URBANA','');
+const isR=n=>n.includes('RURAL');
+
+function candidatoDaURL(){
+  const p=new URLSearchParams(window.location.search);
+  const num=p.get('candidato')||'', cidade=(p.get('cidade')||'').replace(/-/g,'_'), ano=p.get('ano')||'';
+  if(num&&cidade&&ano) return `${num}_${cidade}_${ano}`;
+  if(num&&cidade) return Object.keys(dados).find(k=>k.startsWith(`${num}_${cidade}`))||'';
+  if(num) return Object.keys(dados).find(k=>k.startsWith(num))||'';
+  return '';
+}
+
+// ── MAPA ─────────────────────────────────────────────────────────────────────
+function iniciarMapa(){
+  if(isMobile()) return;
+  mapa=L.map('mapa').setView([-4.8695,-43.3567],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(mapa);
+}
+
+function atualizarMarcadores(){
+  if(!mapa) return;
+  marcadores.forEach(m=>{mapa.removeLayer(m.c);mapa.removeLayer(m.l)});
+  marcadores=[];
+  const c=dados[candidatoAtual]; if(!c) return;
+  const max=Math.max(...Object.values(c.bairros).map(b=>b.total_bairro),1);
+  Object.entries(c.bairros).forEach(([nome,d])=>{
+    const coords=COORDS[nome]; if(!coords) return;
+    const raio=Math.max(16,16+(d.total_bairro/max)*38);
+    const cor=d.tipo==='rural'?'#8b5e3c':'#1a6b3c';
+    const circle=L.circleMarker(coords,{radius:raio,fillColor:cor,color:'white',weight:2,opacity:1,fillOpacity:.82}).addTo(mapa);
+    const lbl=L.divIcon({className:'',html:`<div style="color:white;font-weight:700;font-size:${raio>26?'10px':'8px'};text-align:center;width:${raio*2}px;margin-left:-${raio}px;margin-top:-${raio*.6}px;text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none">${d.total_bairro}</div>`,iconSize:[0,0]});
+    const lm=L.marker(coords,{icon:lbl,interactive:false}).addTo(mapa);
+    circle.bindTooltip(`<b>${nc(nome)}</b><br>${d.total_bairro} votos`,{direction:'top'});
+    circle.on('click',()=>abrirBairro(nome));
+    marcadores.push({c:circle,l:lm});
+  });
+}
+
+// ── RESUMO ───────────────────────────────────────────────────────────────────
+function renderResumo(){
+  const c=dados[candidatoAtual]; if(!c) return;
+  const bs=Object.values(c.bairros);
+  const comVoto=bs.filter(b=>b.total_bairro>0).length;
+  const melhor=Object.entries(c.bairros).sort((a,b)=>b[1].total_bairro-a[1].total_bairro)[0];
+  const nome=c.nome&&c.nome!==c.numero?c.nome:'Candidato '+c.numero;
+  document.getElementById('candidatoBadge').textContent=`${nome} · Nº ${c.numero} · ${c.ano}`;
+  document.getElementById('resumo').innerHTML=`
+    <div class="resumo-nome">${nome}</div>
+    <div class="resumo-sub">Nº ${c.numero} · ${c.cidade} · ${c.ano}</div>
+    <div class="stats">
+      <div class="stat"><div class="stat-valor">${c.total_geral.toLocaleString('pt-BR')}</div><div class="stat-label">votos totais</div></div>
+      <div class="stat"><div class="stat-valor">${comVoto}</div><div class="stat-label">locais com votos</div></div>
+      <div class="stat full">
+        <div class="stat-label">Melhor resultado</div>
+        <div class="stat-valor" style="font-size:.9rem;margin-top:2px">${melhor?nc(melhor[0]):'—'}</div>
+        <div class="stat-label">${melhor?melhor[1].total_bairro+' votos':''}</div>
+      </div>
+    </div>`;
+}
+
+// ── LISTA ────────────────────────────────────────────────────────────────────
+function renderLista(){
+  const c=dados[candidatoAtual]; if(!c) return;
+  const max=Math.max(...Object.values(c.bairros).map(b=>b.total_bairro),1);
+  const lista=Object.entries(c.bairros)
+    .filter(([_,d])=>filtroAtual==='todos'||d.tipo===filtroAtual)
+    .sort((a,b)=>b[1].total_bairro-a[1].total_bairro);
+  document.getElementById('listaBairros').innerHTML=lista.map(([nome,d])=>`
+    <div class="bairro-item ${bairroAtivo===nome?'ativo':''}" onclick="abrirBairro('${nome.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')">
+      <div style="flex:1;min-width:0">
+        <div class="bairro-nome">${nc(nome)}</div>
+        <span class="bairro-tag ${d.tipo==='rural'?'tag-r':'tag-u'}">${d.tipo==='rural'?'Rural':'Urbano'}</span>
+        <div class="barra-c"><div class="barra" style="width:${(d.total_bairro/max*100).toFixed(1)}%"></div></div>
+      </div>
+      <div class="bairro-v">${d.total_bairro}<span>votos</span></div>
+    </div>`).join('')||'<div class="loader">Nenhum resultado</div>';
+}
+
+// ── MODAL BAIRRO ─────────────────────────────────────────────────────────────
+function abrirBairro(nome){
+  bairroAtivo=nome; renderLista();
+  const c=dados[candidatoAtual]; const d=c.bairros[nome]; if(!d) return;
+  const rural=d.tipo==='rural';
+  document.getElementById('modalH').innerHTML=`
+    <h2>${nc(nome)}</h2>
+    <p>${rural?'Zona Rural':'Zona Urbana'} · ${Object.keys(d.escolas).length} local(is)</p>
+    <div class="modal-total">${d.total_bairro} votos</div>`;
+  document.getElementById('modalB').innerHTML=Object.entries(d.escolas)
+    .sort((a,b)=>b[1].total_escola-a[1].total_escola)
+    .map(([escola,ei])=>`
+      <div class="escola-card">
+        <div class="escola-h">
+          <div>
+            <div class="escola-nome">${escola}</div>
+            ${ei.endereco&&rural?`<div class="escola-pov">📍 ${ei.endereco}</div>`:''}
+          </div>
+          <div class="escola-tot">${ei.total_escola} votos</div>
+        </div>
+        <div class="escola-sec">
+          ${ei.secoes.sort((a,b)=>a.zona.localeCompare(b.zona)||a.secao.localeCompare(b.secao)).map(s=>`
+            <div class="sec-linha"><span>Zona ${s.zona} · Seção ${s.secao}</span><span>${s.votos} voto${s.votos!==1?'s':''}</span></div>`).join('')}
+        </div>
+      </div>`).join('');
+  document.getElementById('modalOv').classList.add('aberto');
+  if(mapa&&COORDS[nome]) mapa.setView(COORDS[nome],15);
+}
+
+function fecharModal(e){
+  if(!e||e.target===document.getElementById('modalOv'))
+    document.getElementById('modalOv').classList.remove('aberto');
+}
+
+// ── FILTRO ───────────────────────────────────────────────────────────────────
+function filtrar(tipo,btn){
+  filtroAtual=tipo;
+  document.querySelectorAll('.btn-f').forEach(b=>b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  renderLista();
+}
+
+// ── TABS ─────────────────────────────────────────────────────────────────────
+function mudarTab(tab,btn){
+  tabAtual=tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  document.getElementById('mainIndividual').style.display=tab==='individual'?'flex':'none';
+  document.getElementById('mainComparacao').style.display=tab==='comparacao'?'flex':'none';
+  if(tab==='individual'&&mapa) setTimeout(()=>mapa.invalidateSize(),100);
+}
+
+// ── COMPARAÇÃO ───────────────────────────────────────────────────────────────
+function popularSelects(){
+  const ops=Object.entries(dados).map(([k,c])=>`<option value="${k}">${c.nome&&c.nome!==c.numero?c.nome:('Cand. '+c.numero)} · ${c.cidade} · ${c.ano}</option>`).join('');
+  document.getElementById('selA').innerHTML=ops;
+  document.getElementById('selB').innerHTML=ops;
+  // tenta selecionar o segundo como padrão no selB
+  const keys=Object.keys(dados);
+  if(keys.length>1) document.getElementById('selB').value=keys[1];
+
+  // verifica URL para comparação automática
+  const p=new URLSearchParams(window.location.search);
+  const comparar=p.get('comparar');
+  if(comparar){
+    const [ca,cb]=comparar.split(',');
+    if(ca&&dados[ca]) document.getElementById('selA').value=ca;
+    if(cb&&dados[cb]) document.getElementById('selB').value=cb;
+    mudarTab('comparacao',document.querySelectorAll('.tab')[1]);
+    executarComparacao();
+  }
+}
+
+function executarComparacao(){
+  const chA=document.getElementById('selA').value;
+  const chB=document.getElementById('selB').value;
+  if(!chA||!chB||chA===chB){
+    document.getElementById('resultadoComp').innerHTML='<div class="erro">Selecione dois candidatos diferentes.</div>';
+    return;
+  }
+  const cA=dados[chA], cB=dados[chB];
+  const nomeA=cA.nome&&cA.nome!==cA.numero?cA.nome:'Cand. '+cA.numero;
+  const nomeB=cB.nome&&cB.nome!==cB.numero?cB.nome:'Cand. '+cB.numero;
+  const diff=cA.total_geral-cB.total_geral;
+  const diffClass=diff>0?'diff-pos':diff<0?'diff-neg':'diff-zero';
+  const diffTxt=diff>0?`▲ ${diff.toLocaleString('pt-BR')} votos a mais para ${nomeA}`:diff<0?`▼ ${Math.abs(diff).toLocaleString('pt-BR')} votos a mais para ${nomeB}`:'Empate técnico';
+
+  // todos os bairros dos dois
+  const todosBairros=[...new Set([...Object.keys(cA.bairros),...Object.keys(cB.bairros)])].sort();
+
+  // lista lateral
+  document.getElementById('listaComp').innerHTML=todosBairros.map(nome=>{
+    const vA=cA.bairros[nome]?.total_bairro||0;
+    const vB=cB.bairros[nome]?.total_bairro||0;
+    const d2=vA-vB;
+    const cor=d2>0?'var(--verde)':d2<0?'#c0392b':'#888';
+    return `<div class="bairro-item">
+      <div style="flex:1;min-width:0"><div class="bairro-nome">${nc(nome)}</div>
+        <div style="font-size:.68rem;color:#888;margin-top:2px">${nomeA}: ${vA} · ${nomeB}: ${vB}</div>
+      </div>
+      <div style="font-size:.82rem;font-weight:700;color:${cor};text-align:right;min-width:40px">${d2>0?'+':''}${d2}</div>
+    </div>`;
+  }).join('');
+
+  // gráfico
+  const labels=todosBairros.map(n=>nc(n).slice(0,14));
+  const valA=todosBairros.map(n=>cA.bairros[n]?.total_bairro||0);
+  const valB=todosBairros.map(n=>cB.bairros[n]?.total_bairro||0);
+
+  if(graficoComp) graficoComp.destroy();
+
+  document.getElementById('resultadoComp').innerHTML=`
+    <div class="grafico-wrap">
+      <div class="grafico-titulo">Votos por bairro — ${nomeA} vs ${nomeB}</div>
+      <canvas id="canvasComp" class="grafico-canvas"></canvas>
+    </div>
+    <div class="comp-resultado">
+      <div class="comp-titulo">Resumo geral</div>
+      <div class="comp-stats">
+        <div class="comp-stat a">
+          <div class="comp-stat-nome">${nomeA}</div>
+          <div class="comp-stat-valor">${cA.total_geral.toLocaleString('pt-BR')}</div>
+          <div class="comp-stat-sub">${cA.cidade} · ${cA.ano}</div>
+        </div>
+        <div class="comp-stat b">
+          <div class="comp-stat-nome">${nomeB}</div>
+          <div class="comp-stat-valor" style="color:var(--azul)">${cB.total_geral.toLocaleString('pt-BR')}</div>
+          <div class="comp-stat-sub">${cB.cidade} · ${cB.ano}</div>
+        </div>
+        <div class="diff-badge ${diffClass}">${diffTxt}</div>
+      </div>
+      <div class="comp-table-wrap">
+        <table>
+          <thead><tr>
+            <th>Bairro/Zona</th>
+            <th>${nomeA} (${cA.ano})</th>
+            <th>${nomeB} (${cB.ano})</th>
+            <th>Diferença</th>
+          </tr></thead>
+          <tbody>
+            ${todosBairros.map(nome=>{
+              const vA2=cA.bairros[nome]?.total_bairro||0;
+              const vB2=cB.bairros[nome]?.total_bairro||0;
+              const d3=vA2-vB2;
+              const cls=d3>0?'td-pos':d3<0?'td-neg':'td-zero';
+              return `<tr>
+                <td>${nc(nome)}</td>
+                <td>${vA2}</td>
+                <td>${vB2}</td>
+                <td class="${cls}">${d3>0?'+':''}${d3}</td>
+              </tr>`;
+            }).join('')}
+            <tr style="font-weight:700;background:#f9f9f9">
+              <td>TOTAL</td>
+              <td>${cA.total_geral.toLocaleString('pt-BR')}</td>
+              <td>${cB.total_geral.toLocaleString('pt-BR')}</td>
+              <td class="${diff>0?'td-pos':diff<0?'td-neg':'td-zero'}">${diff>0?'+':''}${diff.toLocaleString('pt-BR')}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>`;
+
+  graficoComp=new Chart(document.getElementById('canvasComp'),{
+    type:'bar',
+    data:{
+      labels,
+      datasets:[
+        {label:nomeA+' ('+cA.ano+')',data:valA,backgroundColor:'rgba(26,107,60,.75)',borderRadius:3},
+        {label:nomeB+' ('+cB.ano+')',data:valB,backgroundColor:'rgba(26,74,139,.65)',borderRadius:3}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:true,
+      plugins:{legend:{position:'top',labels:{font:{size:11}}}},
+      scales:{
+        x:{ticks:{font:{size:9},maxRotation:45}},
+        y:{ticks:{font:{size:10}},beginAtZero:true}
+      }
+    }
+  });
+}
+
+// ── CARREGAR DADOS ───────────────────────────────────────────────────────────
+async function carregarDados(){
+  try{
+    const r=await fetch('dados_eleicao.json');
+    dados=await r.json();
+
+    // individual
+    const urlCand=candidatoDaURL();
+    candidatoAtual=urlCand&&dados[urlCand]?urlCand:Object.keys(dados)[0];
+    renderResumo(); renderLista(); atualizarMarcadores();
+
+    // comparação
+    popularSelects();
+  }catch(e){
+    document.getElementById('resumo').innerHTML='<div class="erro">Erro ao carregar dados_eleicao.json</div>';
+    document.getElementById('listaBairros').innerHTML='';
+  }
+}
+
+iniciarMapa();
+carregarDados();
+</script>
+</body>
+</html>
