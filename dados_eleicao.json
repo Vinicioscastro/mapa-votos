@@ -6917,6 +6917,3446 @@
       }
     }
   },
+  "11222_caxias_2020": {
+    "chave": "11222_caxias_2020",
+    "ano": "2020",
+    "numero": "11222",
+    "nome": "RAIMUNDA DE FÁTIMA ROCHA BEZERRA",
+    "cidade": "Caxias",
+    "total_geral": 689,
+    "bairros": {
+      "ALTO DO IPEM": {
+        "total_bairro": 30,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL ANTENOR VIANA JUNIOR": {
+            "total_escola": 30,
+            "endereco": "AV. ALTO DO IPEM, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "294",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "295",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "296",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "297",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "298",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "299",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "300",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "301",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "302",
+                "votos": 5
+              }
+            ]
+          }
+        }
+      },
+      "BACURI": {
+        "total_bairro": 4,
+        "tipo": "urbana",
+        "escolas": {
+          "U. E. M. SÃO RAIMUNDO (C. E. DEP. HUMBERTO COUTINHO)": {
+            "total_escola": 4,
+            "endereco": "TRAV. SÃO JOSÉ, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "498",
+                "votos": 4
+              }
+            ]
+          }
+        }
+      },
+      "BAIXINHA": {
+        "total_bairro": 104,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL SANTA CATARINA DE LABOURE": {
+            "total_escola": 104,
+            "endereco": "RUA SANTA MARIA S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "159",
+                "votos": 20
+              },
+              {
+                "zona": "4",
+                "secao": "221",
+                "votos": 20
+              },
+              {
+                "zona": "4",
+                "secao": "276",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "55",
+                "votos": 32
+              },
+              {
+                "zona": "4",
+                "secao": "56",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "57",
+                "votos": 32
+              }
+            ]
+          }
+        }
+      },
+      "CALDEIROES": {
+        "total_bairro": 7,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL HELIO DE SOUSA QUEIROZ": {
+            "total_escola": 5,
+            "endereco": "RUA DOS CALDEIRÕES, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "415",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "416",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "417",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "418",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "419",
+                "votos": 3
+              }
+            ]
+          },
+          "CENTRO DE EDUCAÇÃO INFANTIL MARCELO DINO": {
+            "total_escola": 2,
+            "endereco": "RUA DOS CALDEIRÕES, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "441",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "442",
+                "votos": 2
+              }
+            ]
+          }
+        }
+      },
+      "CAMPO DE BELEM": {
+        "total_bairro": 31,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL LEONCIO ALVES ARAUJO": {
+            "total_escola": 10,
+            "endereco": "RUA CAMPO DE FORTALEZA, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "462",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "463",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "464",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "465",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "466",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "467",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "468",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL PAULO FREIRE": {
+            "total_escola": 8,
+            "endereco": "RUA DA MARIINHA, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "404",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "405",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "406",
+                "votos": 3
+              }
+            ]
+          },
+          "CENTRO DE ENSINO CEZAR MARQUES": {
+            "total_escola": 7,
+            "endereco": "AV. WALTER BRITO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "431",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "432",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "433",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "434",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "435",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "436",
+                "votos": 5
+              }
+            ]
+          },
+          "CRECHE ROSINA": {
+            "total_escola": 6,
+            "endereco": "RUA SANTO ANTONIO, 1014",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "487",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "488",
+                "votos": 4
+              }
+            ]
+          }
+        }
+      },
+      "CANGALHEIRO": {
+        "total_bairro": 11,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE ENSINO ODOLFO MEDEIROS": {
+            "total_escola": 5,
+            "endereco": "RUA SEN. CLODOMIR CARDOSO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "129",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "188",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "222",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "60",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "61",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL LOURDES FEITOSA": {
+            "total_escola": 4,
+            "endereco": "TRAV. SEN. CLODOMIR CARDOSO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "100",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "12",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "134",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "15",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "16",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "197",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA DR. ACHILES CRUZ": {
+            "total_escola": 2,
+            "endereco": "PRACA SALVADOR BARBOSA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "13",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "14",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "191",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "249",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "258",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "274",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "CASTELO BRANCO": {
+        "total_bairro": 25,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA NOSSA SENHORA DOS REMEDIOS": {
+            "total_escola": 12,
+            "endereco": "RUA BELA VISTA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "113",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "58",
+                "votos": 12
+              },
+              {
+                "zona": "4",
+                "secao": "59",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA PROFª SUELY REIS": {
+            "total_escola": 7,
+            "endereco": "RUA BOM JESUS DOS PASSOS 1656",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "62",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "63",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "64",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "65",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL JOÃO LOBO": {
+            "total_escola": 6,
+            "endereco": "TRAVESSA BELA VISTA,S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "177",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "218",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "254",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "271",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "CENTRO": {
+        "total_bairro": 74,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE ENSINO EUGÊNIO BARROS": {
+            "total_escola": 13,
+            "endereco": "RUA CEL. MANOEL GONÇALVES, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "102",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "124",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "277",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "36",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "37",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "38",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "39",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "40",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA DUQUE DE CAXIAS": {
+            "total_escola": 12,
+            "endereco": "PRACA CEMITERIO DOS REMEDIOS",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "26",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "27",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "28",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "29",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "30",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "31",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "98",
+                "votos": 4
+              }
+            ]
+          },
+          "FUNDAÇÃO EDUCACIONAL COELHO NETO": {
+            "total_escola": 10,
+            "endereco": "RUA CORONEL LIBANIO LOBO 805",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "24",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "25",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "32",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "33",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "34",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "35",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "381",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "382",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "383",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA PROFª RAIMUNDA BARBOSA GONÇALVES DE JESUS": {
+            "total_escola": 10,
+            "endereco": "AV. SANTOS DUMONT, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "110",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "127",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "215",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "257",
+                "votos": 6
+              }
+            ]
+          },
+          "CENTRO DE ENSINO THALES RIBEIRO GONÇALVES": {
+            "total_escola": 9,
+            "endereco": "PRAÇA CORONEL JOÃO CASTELO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "220",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "244",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "46",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "51",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "52",
+                "votos": 4
+              }
+            ]
+          },
+          "CENTRO DE ENSINO GONÇALVES DIAS": {
+            "total_escola": 7,
+            "endereco": "RUA ARAO REIS, 397",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "1",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "11",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "122",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "123",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "17",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "18",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "19",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "2",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "20",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "3",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL JOAQUIM FRANCISCO DE SOUSA": {
+            "total_escola": 5,
+            "endereco": "AV. INDEPENDENCIA, 1863",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "280",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "41",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "42",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "43",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "44",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL PAULO MARINHO": {
+            "total_escola": 4,
+            "endereco": "RUA SÃO PEDRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "103",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "105",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "106",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "116",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "163",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "169",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "185",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "22",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "23",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "4",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "5",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "6",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "7",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "8",
+                "votos": 0
+              }
+            ]
+          },
+          "S E S C - SERVICO SOCIAL DO COMERCIO": {
+            "total_escola": 3,
+            "endereco": "PRAÇA CANDIDO MENDES",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "10",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "9",
+                "votos": 3
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA JOAO LISBOA": {
+            "total_escola": 1,
+            "endereco": "RUA 1 DE AGOSTO S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "107",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "111",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "115",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "126",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "45",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "COHAB": {
+        "total_bairro": 19,
+        "tipo": "urbana",
+        "escolas": {
+          "COLÉGIO MILITAR TIRADENTES IV - COLÉGIO MILITAR": {
+            "total_escola": 19,
+            "endereco": "AVENIDA 02",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "132",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "166",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "214",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "226",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "250",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "73",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "74",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "76",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "77",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "78",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "79",
+                "votos": 5
+              }
+            ]
+          }
+        }
+      },
+      "FUMO VERDE": {
+        "total_bairro": 1,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL JACIRA GONCALVES VILANOVA": {
+            "total_escola": 1,
+            "endereco": "MA - 034 BAIRRO FUMO VERDE",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "216",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "92",
+                "votos": 1
+              }
+            ]
+          }
+        }
+      },
+      "ITAPECURUZINHO": {
+        "total_bairro": 2,
+        "tipo": "urbana",
+        "escolas": {
+          "COLEGIO MARLY COSTA SARNEY": {
+            "total_escola": 2,
+            "endereco": "RUA NOVA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "108",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "156",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "189",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "270",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "JOAO VIANA": {
+        "total_bairro": 8,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL DR. JOÃO VIANA": {
+            "total_escola": 8,
+            "endereco": "TRAV. MANOEL EMIDIO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "168",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "173",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "181",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "195",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "233",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "241",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "263",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "273",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "JOSE CASTRO": {
+        "total_bairro": 1,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE EDUCAÇÃO INFANTIL VEREADOR CATULÉ": {
+            "total_escola": 1,
+            "endereco": "RUA 13 DE MAIO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "199",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "227",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "259",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "LUIZA QUEIROZ": {
+        "total_bairro": 0,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL PROFª MARINALVA SOARES GUIMARÃES": {
+            "total_escola": 0,
+            "endereco": "AV. JOSE GRASSI, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "225",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "238",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "265",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "MATADOURO NOVO": {
+        "total_bairro": 14,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL UNIÃO DOS MORADORES": {
+            "total_escola": 11,
+            "endereco": "3 TRAVESSA VILA ARIAS S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "359",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "360",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "361",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "362",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "363",
+                "votos": 1
+              }
+            ]
+          },
+          "CENTRO DE ENSINO INTEGRADA MARIA LUIZA PEREIRA": {
+            "total_escola": 3,
+            "endereco": "AV. VILA ARIAS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "375",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "376",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "377",
+                "votos": 2
+              }
+            ]
+          }
+        }
+      },
+      "MORRO DO ALECRIM": {
+        "total_bairro": 9,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE ESTUDOS SUPERIORES DE CAXIAS - CESC - UEMA": {
+            "total_escola": 9,
+            "endereco": "PRAÇA DUQUE DE CAXIAS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "104",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "112",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "114",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "119",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "121",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "128",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "152",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "153",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "154",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "21",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "275",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "47",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "48",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "49",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "50",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "97",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "MUTIRAO": {
+        "total_bairro": 16,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL RAIMUNDO NUNES DA SILVA": {
+            "total_escola": 10,
+            "endereco": "RUA SÃO VICENTE DE PAULA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "175",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "192",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "239",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "255",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "264",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "278",
+                "votos": 2
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL GUIOMAR CRUZ ASSUNÇÃO": {
+            "total_escola": 6,
+            "endereco": "AVENIDA ALVORADA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "118",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "135",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "160",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "172",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "NOVA CAXIAS": {
+        "total_bairro": 17,
+        "tipo": "urbana",
+        "escolas": {
+          "COLÉGIO ANTONIO RODRIGUES BAYMA": {
+            "total_escola": 12,
+            "endereco": "AV. MAL. COSTA E SILVA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "120",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "133",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "143",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "144",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "99",
+                "votos": 0
+              }
+            ]
+          },
+          "CENTRO DE EDUCAÇÃO INFANTIL FRANCILEIDE LEAL MOREIRA": {
+            "total_escola": 5,
+            "endereco": "LARGO RAIMUNDO SANTOS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "101",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "125",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "161",
+                "votos": 1
+              }
+            ]
+          }
+        }
+      },
+      "PIRAJÁ": {
+        "total_bairro": 13,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL COSTA SOBRINHO": {
+            "total_escola": 8,
+            "endereco": "AVENIDA PIRAJÁ, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "396",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "397",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "398",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "399",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "400",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "401",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "402",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "403",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL PROFª. MAGNOLIA HERMINIA ARAÚJO": {
+            "total_escola": 5,
+            "endereco": "RUA SÃO FRANCISCO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "483",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "484",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "485",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "486",
+                "votos": 2
+              }
+            ]
+          }
+        }
+      },
+      "PONTE": {
+        "total_bairro": 21,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA PROFª. RITA DE CASSIA AZEVEDO": {
+            "total_escola": 9,
+            "endereco": "RUA SÃO JOSÉ, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "443",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "444",
+                "votos": 8
+              },
+              {
+                "zona": "4",
+                "secao": "445",
+                "votos": 1
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR EMILIA COSTA": {
+            "total_escola": 8,
+            "endereco": "PRACA DES. ALMADA LIMA S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "411",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "412",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "413",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "414",
+                "votos": 3
+              }
+            ]
+          },
+          "CENTRO DE ENSINO ALUIZIO AZEVEDO": {
+            "total_escola": 2,
+            "endereco": "AV. FRANCISCO CASTRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "424",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "425",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "426",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "427",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "428",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "429",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "430",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL JOSÉ CASTRO": {
+            "total_escola": 1,
+            "endereco": "AV. FRANCISCO CASTRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "457",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "458",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "459",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "460",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "461",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA VESPASIANO RAMOS": {
+            "total_escola": 1,
+            "endereco": "RUA SANTA RITA, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "420",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "421",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "422",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "423",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "POV. SOLEDADE - 3º DISTRITO": {
+        "total_bairro": 2,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL VEREADOR FABIO GENTIL": {
+            "total_escola": 2,
+            "endereco": "RUA FABIO GENTIL, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "495",
+                "votos": 2
+              }
+            ]
+          }
+        }
+      },
+      "POVOADO SITIO - SEGUNDO DISTRITO": {
+        "total_bairro": 7,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL ANTONIO ROSA DE LIMA": {
+            "total_escola": 7,
+            "endereco": "POVOADO SITIO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "316",
+                "votos": 7
+              }
+            ]
+          }
+        }
+      },
+      "PRIMEIRO DISTRITO - ZONA RURAL": {
+        "total_bairro": 26,
+        "tipo": "rural",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL DOM LUIS MARELIM": {
+            "total_escola": 8,
+            "endereco": "POVOADO DESCANSO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "208",
+                "votos": 8
+              },
+              {
+                "zona": "4",
+                "secao": "217",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL PEDRO NEIVA DE SANTANA": {
+            "total_escola": 7,
+            "endereco": "BR 316 KM 506 POVOADO BREJINHO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "109",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "117",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "243",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "496",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL LUIS FALCÃO": {
+            "total_escola": 4,
+            "endereco": "POVOADO ESTIVA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "200",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "204",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "234",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "266",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL MARIA MARQUES COURA": {
+            "total_escola": 3,
+            "endereco": "POVOADO BAÚ",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "174",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "183",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "85",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "86",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "87",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "88",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "89",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "90",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "91",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL EZER VILANOVA": {
+            "total_escola": 2,
+            "endereco": "POVOADO BARRIGUDA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "170",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "180",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "93",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "94",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL CRISTINO GONÇALVES": {
+            "total_escola": 1,
+            "endereco": "POVOADO BUENOS AIRES",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "157",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "164",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "179",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "205",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "230",
+                "votos": 0
+              }
+            ]
+          },
+          "CENTRO DE SAÚDE DR. JOSÉ D'ASSUNÇÃO BRANDÃO": {
+            "total_escola": 1,
+            "endereco": "POVOADO BREJINHO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "158",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "171",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "182",
+                "votos": 0
+              }
+            ]
+          },
+          "COLEGIO TORQUATO EVANGELISTA DA SILVA": {
+            "total_escola": 0,
+            "endereco": "POVOADO PORTO DO PAIOL",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "213",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "80",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "81",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "82",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "83",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "84",
+                "votos": 0
+              }
+            ]
+          },
+          "CENTRO DE ENSINO PROF.ª MARIA DO CARMO BEZERRA PAIVA": {
+            "total_escola": 0,
+            "endereco": "POVOADO CAXIRIMBÚ",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "186",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "196",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "242",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "268",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL JOSE PEREIRA DAS NEVES": {
+            "total_escola": 0,
+            "endereco": "POVOADO LARANJEIRA DOS NEVES",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "211",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "236",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL ZEFERINO BORGES DA CUNHA": {
+            "total_escola": 0,
+            "endereco": "POVOADO SUSSUARANA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "492",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL RENATO VILANOVA": {
+            "total_escola": 0,
+            "endereco": "POVOADO SOSSEGO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "184",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "206",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL NOSSA SENHORA DE NAZARÉ (1º DISTRITO)": {
+            "total_escola": 0,
+            "endereco": "POVOADO TRABALHOSA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "245",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "272",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL JOÃO DA CRUZ NUNES DE ALMEIDA": {
+            "total_escola": 0,
+            "endereco": "POVOADO LAVRA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "201",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "228",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL EGLATINA VILANOVA": {
+            "total_escola": 0,
+            "endereco": "POVOADO JACURUTU",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "212",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "240",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SÃO FRANCISCO DE ASSIS": {
+            "total_escola": 0,
+            "endereco": "POVOADO BOM JARDIM",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "202",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "232",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL SANTA TERESINHA": {
+            "total_escola": 0,
+            "endereco": "POVOADO MONTE VALERIANO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "203",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "231",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SÃO ROQUE": {
+            "total_escola": 0,
+            "endereco": "POVOADO BANANAL",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "237",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "REFINARIA": {
+        "total_bairro": 22,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA PRES. JOHN KENNEDY": {
+            "total_escola": 18,
+            "endereco": "AVENIDA CENTRAL 527",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "165",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "53",
+                "votos": 12
+              },
+              {
+                "zona": "4",
+                "secao": "54",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL RUI FRAZAO SOARES": {
+            "total_escola": 4,
+            "endereco": "RUA SANTA CRUZ, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "142",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "155",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "190",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "251",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "267",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "RES. EUGÊNIO COUTINHO": {
+        "total_bairro": 7,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL PROF. ARLINDO OLIVEIRA": {
+            "total_escola": 7,
+            "endereco": "AV. 15 DE NOVEMBRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "310",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "311",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "312",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "313",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "314",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "315",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "RES. HELIO QUEIROZ": {
+        "total_bairro": 2,
+        "tipo": "urbana",
+        "escolas": {
+          "FIEL SESI SENAI": {
+            "total_escola": 2,
+            "endereco": "R. GONÇALVES DIAS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "187",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "198",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "219",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "256",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "279",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "75",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "RES. VILA PARAISO": {
+        "total_bairro": 1,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL PREFEITO EZIQUIO BARROS FILHO": {
+            "total_escola": 1,
+            "endereco": "RUA ADÃO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "494",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "499",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "SALOBRO": {
+        "total_bairro": 8,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL EDSON LOBÃO": {
+            "total_escola": 8,
+            "endereco": "RUA JANIO QUADROS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "387",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "388",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "389",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "390",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "391",
+                "votos": 2
+              }
+            ]
+          }
+        }
+      },
+      "SAO FRANCISCO": {
+        "total_bairro": 50,
+        "tipo": "urbana",
+        "escolas": {
+          "ESCOLA COMUNITÁRIA NOSSA SENHORA DAS GRAÇAS": {
+            "total_escola": 19,
+            "endereco": "RUA ALUISIO LOBO, 3145",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "368",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "369",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "370",
+                "votos": 8
+              },
+              {
+                "zona": "4",
+                "secao": "371",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL COELHO NETO": {
+            "total_escola": 17,
+            "endereco": "RUA SATURNINO BELO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "303",
+                "votos": 12
+              },
+              {
+                "zona": "4",
+                "secao": "304",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "305",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "306",
+                "votos": 5
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SÃO FRANCISCO": {
+            "total_escola": 14,
+            "endereco": "RUA SÃO FRANCISCO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "351",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "352",
+                "votos": 7
+              },
+              {
+                "zona": "4",
+                "secao": "353",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "354",
+                "votos": 7
+              }
+            ]
+          }
+        }
+      },
+      "SEGUNDO DISTRITO - ZONA RURAL": {
+        "total_bairro": 23,
+        "tipo": "rural",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL CEL. GERVASIO COSTA": {
+            "total_escola": 14,
+            "endereco": "POVOADO RODAGEM",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "283",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "284",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "285",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "286",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "287",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "288",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "503",
+                "votos": 4
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL ALDERICO MACHADO": {
+            "total_escola": 4,
+            "endereco": "POVOADO CAICARA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "378",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "379",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "380",
+                "votos": 3
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL NOSSA SENHORA DE NAZARE (2º DISTRITO)": {
+            "total_escola": 2,
+            "endereco": "POVOADO NAZARE DO BRUNO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "338",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "339",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "340",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "341",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "342",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL INEZ EVANGELISTA GUIMARÃES": {
+            "total_escola": 2,
+            "endereco": "POVOADO BARRO VERMELHO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "343",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "344",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "345",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "346",
+                "votos": 1
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL JOSE GONÇALVES COSTA": {
+            "total_escola": 1,
+            "endereco": "POVOADO ALECRIM",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "324",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "325",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "326",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "327",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "328",
+                "votos": 1
+              }
+            ]
+          },
+          "CENTRO DE ENSINO JOSÉ BRUNO DE MORAIS": {
+            "total_escola": 0,
+            "endereco": "POVOADO NAZARÉ DO BRUNO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "355",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "356",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL MILENA": {
+            "total_escola": 0,
+            "endereco": "POVOADO BATALHA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "500",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL VICENTE BRUNO": {
+            "total_escola": 0,
+            "endereco": "POVOADO NAZARE DO BRUNO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "307",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "308",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "309",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL MARIA DALVA FERNANDES REIS": {
+            "total_escola": 0,
+            "endereco": "POV. VACAS - CAMINHO DO POV. NAZARÉ DO BRUNO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "347",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "348",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SANTA LUCIA": {
+            "total_escola": 0,
+            "endereco": "POVOADO SÃO MARTINHO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "357",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "358",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SINHA CASTELO": {
+            "total_escola": 0,
+            "endereco": "POVOADO ENGENHO D'AGUA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "364",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "365",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "366",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "367",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "501",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SÃO RAIMUNDO": {
+            "total_escola": 0,
+            "endereco": "POVOADO MACAMBIRA / BOM SOSSEGO - 2 DISTRITO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "502",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "SERIEMA": {
+        "total_bairro": 48,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE ENSINO SANTOS DUMONT": {
+            "total_escola": 17,
+            "endereco": "AVENIDA SANTOS DUMONT, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "329",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "330",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "331",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "332",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "333",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "334",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "335",
+                "votos": 4
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SANTOS DUMONT": {
+            "total_escola": 16,
+            "endereco": "RUA DO CAJUEIRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "336",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "337",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "372",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "373",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "374",
+                "votos": 4
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL ACRISIO CRUZ": {
+            "total_escola": 7,
+            "endereco": "RUA SESOSTRE PEREIRA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "292",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "293",
+                "votos": 4
+              }
+            ]
+          },
+          "CENTRO DE CONVIVÊNCIA DO IDOSO": {
+            "total_escola": 5,
+            "endereco": "RUA 06, PRAÇA DO ESTÁDIO S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "349",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "350",
+                "votos": 1
+              }
+            ]
+          },
+          "CRECHE DO SERIEMA": {
+            "total_escola": 3,
+            "endereco": "RUA RIO DE JANEIRO, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "384",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "385",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "386",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "TAMARINEIRO": {
+        "total_bairro": 3,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL MARCELO TADEU": {
+            "total_escola": 3,
+            "endereco": "RUA DO TAMARINEIRO, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "472",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "473",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "474",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "475",
+                "votos": 2
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL JOSÉ BELMIRO DE PAIVA": {
+            "total_escola": 0,
+            "endereco": "RUA DA SULINA, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "437",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "438",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "439",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "440",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "TERCEIRO DISTRITO - ZONA RURAL": {
+        "total_bairro": 3,
+        "tipo": "rural",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL SÃO RAIMUNDO": {
+            "total_escola": 2,
+            "endereco": "POVOADO CHAPADA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "469",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "470",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "471",
+                "votos": 1
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL SÃO JOSÉ (3º DISTRITO)": {
+            "total_escola": 1,
+            "endereco": "POVOADO MIMOSO",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "394",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "395",
+                "votos": 1
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL GENTIL FRAZÃO": {
+            "total_escola": 0,
+            "endereco": "POVOADO BURITI CORRENTE",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "476",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "477",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "478",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "479",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL MARIA ALICE CAVALCANTE": {
+            "total_escola": 0,
+            "endereco": "POVOADO SANTA ROSA (ALIANÇA)",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "504",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE ESCOLAR MUNICIPAL JOÃO SANTINO TORRES": {
+            "total_escola": 0,
+            "endereco": "POVOADO CABECEIRA DOS CAVALOS",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "446",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "447",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "448",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "449",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "450",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "451",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "TESO DURO": {
+        "total_bairro": 21,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL ENG. JADIHEL CARVALHO": {
+            "total_escola": 21,
+            "endereco": "ESTRADA DE ALDEIAS ALTAS S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "317",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "318",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "319",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "320",
+                "votos": 10
+              },
+              {
+                "zona": "4",
+                "secao": "321",
+                "votos": 4
+              },
+              {
+                "zona": "4",
+                "secao": "322",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "323",
+                "votos": 1
+              }
+            ]
+          },
+          "IFMA - CAMPUS CAXIAS": {
+            "total_escola": 0,
+            "endereco": "AV. ALUIZIO LOBO, 2163",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "493",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "TREZIDELA": {
+        "total_bairro": 27,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA IZAURA COSTA": {
+            "total_escola": 14,
+            "endereco": "RUA ODORICO MENDES, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "452",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "453",
+                "votos": 6
+              },
+              {
+                "zona": "4",
+                "secao": "454",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "455",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "456",
+                "votos": 3
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA DIAS CARNEIRO": {
+            "total_escola": 6,
+            "endereco": "RUA SÃO JOSE, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "480",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "481",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "482",
+                "votos": 2
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA DEP. ALEXANDRE COSTA": {
+            "total_escola": 3,
+            "endereco": "AV. RODRIGO OTAVIO, SN",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "489",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "490",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "491",
+                "votos": 1
+              }
+            ]
+          },
+          "SENAC - SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL": {
+            "total_escola": 2,
+            "endereco": "AV. LUIZ SALES, 151",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "392",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "393",
+                "votos": 2
+              }
+            ]
+          },
+          "CRAS CALDEIRÕES": {
+            "total_escola": 2,
+            "endereco": "AV. NOSSA SENHORA DE NAZARÉ, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "407",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "408",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "409",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "410",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "VENEZA": {
+        "total_bairro": 0,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL FRANCISCO BRANDÃO": {
+            "total_escola": 0,
+            "endereco": "MA - 034 BAIRRO - VENEZA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "269",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "95",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "96",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "VILA ARIAS": {
+        "total_bairro": 6,
+        "tipo": "urbana",
+        "escolas": {
+          "CENTRO DE ENSINO CRISTOVÃO COLOMBO": {
+            "total_escola": 6,
+            "endereco": "AV. BRASIL, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "289",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "290",
+                "votos": 5
+              },
+              {
+                "zona": "4",
+                "secao": "291",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "VILA LOBAO": {
+        "total_bairro": 1,
+        "tipo": "urbana",
+        "escolas": {
+          "CRECHE VILA LOBAO": {
+            "total_escola": 1,
+            "endereco": "RUA PEDREIRAS, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "209",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "229",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "282",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "VILA SAO JOSE": {
+        "total_bairro": 0,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE ESCOLAR MUNICIPAL SÃO JOSE (SEDE)": {
+            "total_escola": 0,
+            "endereco": "RUA PRINCIPAL, 1782",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "176",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "193",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "235",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "260",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "281",
+                "votos": 0
+              }
+            ]
+          }
+        }
+      },
+      "VOLTA REDONDA": {
+        "total_bairro": 25,
+        "tipo": "urbana",
+        "escolas": {
+          "UNIDADE INTEGRADA MUNICIPAL FILOMENA MACHADO TEIXEIRA": {
+            "total_escola": 7,
+            "endereco": "RUA 21 DE ABRIL, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "140",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "147",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "148",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "150",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "246",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "261",
+                "votos": 1
+              }
+            ]
+          },
+          "ESCOLINHA TIA JOANA": {
+            "total_escola": 6,
+            "endereco": "AV. VOLTA REDONDA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "210",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "223",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "247",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "253",
+                "votos": 4
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL MARCIA MARINHO": {
+            "total_escola": 6,
+            "endereco": "RUA DO CAMPO S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "137",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "138",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "139",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "145",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "146",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "149",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "69",
+                "votos": 3
+              },
+              {
+                "zona": "4",
+                "secao": "70",
+                "votos": 0
+              }
+            ]
+          },
+          "COLÉGIO BOMBEIRO MILITAR 2 DE JULHO DEBORAH PEREIRA": {
+            "total_escola": 3,
+            "endereco": "AV. VOLTA REDONDA, S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "131",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "136",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "167",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "66",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "67",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "68",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "71",
+                "votos": 1
+              },
+              {
+                "zona": "4",
+                "secao": "72",
+                "votos": 0
+              }
+            ]
+          },
+          "CENTRO DA JUVENTUDE DA VOLTA REDONDA": {
+            "total_escola": 2,
+            "endereco": "AV. VOLTA REDONDA S/N",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "224",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "252",
+                "votos": 2
+              },
+              {
+                "zona": "4",
+                "secao": "262",
+                "votos": 0
+              }
+            ]
+          },
+          "UNIDADE INTEGRADA MUNICIPAL ANTONIO EDSON RODRIGUES": {
+            "total_escola": 1,
+            "endereco": "AVENIDA VOLTA REDONDA",
+            "secoes": [
+              {
+                "zona": "4",
+                "secao": "141",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "151",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "162",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "178",
+                "votos": 0
+              },
+              {
+                "zona": "4",
+                "secao": "194",
+                "votos": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
   "11456_caxias_2024": {
     "chave": "11456_caxias_2024",
     "ano": "2024",
